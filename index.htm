@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="game">
+            <section class="home">
+                <div class="content">
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="">
+                    </div>
+                    <div class="button">
+                        <button>
+                            <span>Start</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="play ">
+                <div class="content">
+                    <div class="winAlert ">
+                        <span></span>
+                        <div class="button">
+                            <button onclick="reStart()">
+                                <span>ReStart</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tieAlert">
+                        <h1>TIE!!!</h1>
+                    </div>
+                    <div class="score">
+                        Player: 0 <br/> Bot: 0
+                    </div>
+                    <div class="bothands">
+                        <img src="./assets/img/rock.png" alt="" class="bthand btRock chosen">
+                        <img src="./assets/img/paper.png" alt="" class="bthand btPaper ">
+                        <img src="./assets/img/sizer.png" alt="" class="bthand btSizer">
+                    </div>
+                    <div class="playerhands">
+                        <img src="./assets/img/rock.png" alt="" class="plhand plRock chosen">
+                        <img src="./assets/img/paper.png" alt="" class="plhand plPaper ">
+                        <img src="./assets/img/sizer.png" alt="" class="plhand plSizer">
+                    </div>
+                    <div class="choosebut">
+                        <div onclick="plsecection(0)"  class="btnhand">
+                            <img src="./assets/img/rock.png" alt="">
+                        </div>
+                        <div onclick="plsecection(1)"  class="btnhand">
+                            <img src="./assets/img/paper.png" alt="">
+                        </div>
+                        <div onclick="plsecection(2)"  class="btnhand">
+                            <img src="./assets/img/sizer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
