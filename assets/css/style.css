@@ -309,7 +309,7 @@ main {
 
             & img {
                 display: none;
-                animation: horizontal-shaking 0.5s infinite;
+                animation: horizontal-shaking 1s infinite;
                 width: 200px;
                 left: 25%;
                 position: absolute;
@@ -327,7 +327,7 @@ main {
 
             & img {
                 display: none;
-                animation: horizontal-shaking 0.5s infinite;
+                animation: horizontal-shaking 1s infinite;
                 width: 200px;
                 left: 25%;
                 position: absolute;
