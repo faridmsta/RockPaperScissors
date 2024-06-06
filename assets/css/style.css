@@ -33,6 +33,27 @@ main {
 
 }
 
+#toggleMusic{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    & i{
+        margin-top: 2px;
+    }
+}
+
 .home {
     position: absolute;
     top: 0;

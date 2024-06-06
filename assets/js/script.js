@@ -91,3 +91,24 @@ function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
+const backgroundMusic = document.getElementById('backgroundMusic');
+const toggleMusicButton = document.getElementById('toggleMusic');
+
+function toggleMusic() {
+    if (backgroundMusic.paused) {
+        backgroundMusic.play();
+        toggleMusicButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+    } else {
+        backgroundMusic.pause();
+        backgroundMusic.currentTime = 0; // Reset the audio to the beginning
+        toggleMusicButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+    }
+}
+
+toggleMusicButton.addEventListener('click', toggleMusic);
+
+window.onload = () => {
+    backgroundMusic.play();
+};
+
