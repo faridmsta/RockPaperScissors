@@ -98,11 +98,11 @@ const toggleMusicButton = document.getElementById('toggleMusic');
 function toggleMusic() {
     if (backgroundMusic.paused) {
         backgroundMusic.play();
-        toggleMusicButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        toggleMusicButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     } else {
         backgroundMusic.pause();
         backgroundMusic.currentTime = 0; // Reset the audio to the beginning
-        toggleMusicButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        toggleMusicButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
     }
 }
 
